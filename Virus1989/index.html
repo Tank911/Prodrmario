@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Virus (prototype Dr. Mario, 1989)</title>
+		<style>
+			#webretro-container {
+				width: 800px;
+				height: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Prototype Dr. Mario: Virus 1989</h1>
+		<div id="webretro-container"></div>
+		<br>
+		<input type="button" id="fullscreen" value="Fullscreen">
+    <p>The 1989 prototype of Dr. Mario is the earliest known build of the game, dumped from a retail NROM board with EPROMs soldered on. At this point, the game is called Virus and has numerous differences from the final version. The game is silent, apart from a few sound effects, and the overall presentation is fairly simplistic and unpolished. The core gameplay, however, is mostly the same.</p>
+		<br>
+		<br>
+		<a href="https://tcrf.net/Proto:Dr._Mario_(NES)/Virus_1989_%26_1990">Information In The Cutting Room"</a>
+		
+		<script type="text/javascript" src="embed.js"></script>
+		<script>
+			var frame = webretroEmbed(document.getElementById("webretro-container"), "../", {system: "nes", rom: ""});
+			document.getElementById("fullscreen").onclick = function() {
+				frame.requestFullscreen();
+			};
+		</script>
+	</body>
+</html>
